@@ -3,3 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --text-color-white-1: #fff;
+  --color-blue-1: #387e96;
+  --color-blue-2: #469ebc;
+  --color-white-1: #f4fcff;
+
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--color-blue-1);
+
+  padding: 1.2rem 2.8rem;
+}
+
+.logomarca {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  background: var(--color-white-1);
+  border-radius: 50%;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 4rem;
+  padding: 1.6rem;
+
+  background: var(--color-blue-2);
+  border: 0;
+  border-radius: 0.4rem;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--text-color-white-1);
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100;
+}
+
+.profile {
+  width: 4.2rem;
+  border-radius: 50%;
+}
