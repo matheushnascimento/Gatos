@@ -24,6 +24,8 @@ body {
 }
 
 header {
+  width: 100vw;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +33,8 @@ header {
   background: var(--color-blue-1);
 
   padding: 1.2rem 2.8rem;
+
+  animation: slide 0.5s;
 }
 
 .logomarca {
@@ -39,6 +43,9 @@ header {
   padding: 0.8rem;
   background: var(--color-white-1);
   border-radius: 50%;
+
+  opacity: 0;
+  animation: slide-in-left 0.5s 0.5s both;
 }
 
 .input-wrapper label {
@@ -56,6 +63,8 @@ header {
   background: var(--color-blue-2);
   border: 0;
   border-radius: 0.4rem;
+
+  animation: slide-in-down .5s .5s both;
 }
 
 .input-wrapper input::placeholder {
@@ -69,16 +78,21 @@ header {
 .profile {
   width: 4.2rem;
   border-radius: 50%;
+
+  animation: slide-in-rigth 0.5s 0.5s both;
 }
 
 .capa {
-  max-width: 100%;
+  width: 100vw;
+
+  animation: slide 0.5s;
 }
 
 main,
 aside {
   padding: 0 2.2rem;
 }
+
 .title {
   margin: 3.1rem 0 3.1rem 2.2rem;
 }
@@ -102,6 +116,8 @@ aside {
   border-radius: 50%;
 
   background: var(--color-blue-3);
+
+  animation: slide-in 0.5s;
 }
 
 aside {
@@ -146,4 +162,72 @@ footer {
 
   color: var(--text-color-white-1);
   font-weight: 600;
+}
+
+/* Animações */
+
+@keyframes drop {
+  0% {
+    transform: rotateX(-180deg);
+    transform-origin: Top;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: top;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-rigth {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-down {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
