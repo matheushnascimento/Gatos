@@ -6,12 +6,21 @@
 
 :root {
   --text-color-white-1: #fff;
+  --text-color-black-1: #202024;
+  --text-color-black-2: #121214;
   --color-blue-1: #387e96;
   --color-blue-2: #469ebc;
+  --color-blue-3: #065e7c;
   --color-white-1: #f4fcff;
 
   font-size: 62.5%;
   font-family: "Mulish", sans-serif;
+}
+
+body {
+  color: var(--text-color-black-2);
+  font-size: 1.6rem;
+  line-height: 160%;
 }
 
 header {
@@ -60,4 +69,37 @@ header {
 .profile {
   width: 4.2rem;
   border-radius: 50%;
+}
+
+.capa {
+  max-width: 100%;
+}
+
+main,
+aside {
+  padding: 0 2.2rem;
+}
+.title {
+  margin: 3.1rem 0 3.1rem 2.2rem;
+}
+
+.title h1 {
+  margin-bottom: 0.8rem;
+  color: var(--text-color-black-1);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.buttom-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.botao {
+  width: 4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+
+  background: var(--color-blue-3);
 }
