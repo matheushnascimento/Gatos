@@ -64,7 +64,7 @@ header {
   border: 0;
   border-radius: 0.4rem;
 
-  animation: slide-in-down .5s .5s both;
+  animation: slide-in-down 0.5s 0.5s both;
 }
 
 .input-wrapper input::placeholder {
@@ -229,5 +229,38 @@ footer {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+  .app {
+    display: grid;
+    grid-template-areas:
+      "capa capa aside"
+      "main main aside";
+
+    grid-template-rows: 40.5rem;
+
+    grid-template-columns: 40.15rem 40.15rem;
+
+    margin: 4.4rem 11rem 4rem 11rem;
+  }
+
+  .capa {
+    max-height: 40.5rem;
+    max-width: 80.3rem;
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    grid-area: capa;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  main {
+    grid-area: main;
   }
 }
