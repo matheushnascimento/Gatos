@@ -234,15 +234,19 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
+  :root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
   .app {
     display: grid;
     grid-template-areas:
       "capa capa aside"
       "main main aside";
-
     grid-template-rows: 40.5rem;
-
     grid-template-columns: 40.15rem 40.15rem;
 
     margin: 4.4rem 11rem 4rem 11rem;
@@ -262,5 +266,25 @@ footer {
 
   main {
     grid-area: main;
+
+    padding: 0;
+  }
+
+  .title {
+    margin: 3.2rem auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .botao {
+    align-self: flex-start;
+  }
+
+  aside {
+    margin: 0;
+
+    grid-area: aside;
   }
 }
