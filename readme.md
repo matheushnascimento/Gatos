@@ -1,20 +1,22 @@
-# Blog de Gatos
+# Cat Blog
 
-Este é um projeto didático centrado na criação de um blog sobre gatos, explorando o uso de HTML/CSS Grid para estruturação de páginas.
+This is a didactic project centered on creating a blog 'bout cats, exploring the use of HTML/CSS Grid to structure pages.
 
-## Objetivo
+## Objective
 
 O objetivo deste projeto é proporcionar uma atividade prática para aprender sobre Grid Layout em CSS, implementando um layout responsivo para um blog de gatos.
 
-## Estrutura do Projeto
+This project's objective is to provide a practical activity to learn'bout grid layout in CSS, implementing a responsive layout for a cat blog.
 
-- `index.html`: Página inicial do blog
-- `styles.css`: Arquivo CSS para estilização
+## Project structure
 
-## Conteúdo
+- `index.html`: blog initial page
+- `styles.css`: CSS file for styling
 
-O projeto inclui:
+## Content
 
-- Página inicial com um artigo sobre gatos
-- Links para outros artigos
-- Estruturação utilizando Grid em HTML/CSS
+The project includes:
+
+- Home page with a blog about cats
+- Links for other articles
+- Structure using HTML/CSS grid layout
